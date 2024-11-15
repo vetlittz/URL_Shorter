@@ -1,0 +1,16 @@
+header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+}
+
+nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+  nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid yellow;
+  }

@@ -1,0 +1,6 @@
+@URL_Shorter.Server_HostAddress = http://localhost:5057
+
+GET {{URL_Shorter.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
