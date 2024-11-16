@@ -1,17 +1,17 @@
 <main>
   <label for="email">Enter your email</label>
-  <input type="email" id="email" name="email" placeholder="example@gmail.com" />
+  <input type="email" id="email" name="email" placeholder="example@gmail.com" [(ngModel)]="email" />
 
   <label for="password">Password</label>
-  <input type="password" id="password" name="password" />
+  <input type="password" id="password" name="password" [(ngModel)]="password" />
 
   <label for="confirmpassword">Confirm password</label>
-  <input type="password" id="confirmpassword" name="confirmpassword" />
+  <input type="password" id="confirmpassword" name="confirmpassword" [(ngModel)]="confirmPassword" />
 
   <div class="checkbox-container">
     <label for="admin">Admin</label>
-    <input type="checkbox" id="admin" name="admin" />
+    <input type="checkbox" id="admin" name="admin" [(ngModel)]="isAdmin" />
   </div>
 
-  <button>Register</button>
+  <button (click)="onRegister()">Register</button>
 </main>

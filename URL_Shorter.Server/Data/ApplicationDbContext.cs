@@ -9,6 +9,6 @@ namespace URL_Shorter.Server
         {
         }
 
-        public DbSet<Login> Logins { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }

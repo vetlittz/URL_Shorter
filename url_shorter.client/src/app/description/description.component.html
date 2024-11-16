@@ -1,0 +1,8 @@
+<div class="description-container">
+  <h1>About URL Shortener</h1>
+  <p>{{ description }}</p>
+  <div *ngIf="isAdmin" class="edit-section">
+    <textarea [(ngModel)]="description" rows="4" cols="50"></textarea>
+    <button (click)="updateDescription()">Update Description</button>
+  </div>
+</div>

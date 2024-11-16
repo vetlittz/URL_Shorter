@@ -1,11 +1,11 @@
 <main>
   <label for="emali">Enter your email</label>
-  <input type="email" id="email" name="email" placeholder="example@gmail.com" />
+  <input type="email" id="email" name="email" placeholder="example@gmail.com" [(ngModel)]="email" />
 
   <label for="password">Password</label>
-  <input type="password" id="password" name="password" />
+  <input type="password" id="password" name="password" [(ngModel)]="password" />
 
-  <button>Login</button>
+  <button (click)="onLogin()">Login</button>
 
   <label>No account?</label>
 
